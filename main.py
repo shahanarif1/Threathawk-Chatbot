@@ -102,7 +102,7 @@ quick_messages = [
         7. Comparative analysis with other network agents to understand relative risk"""
     },
     {
-        'label': "Top failed SEA checks",
+        'label': "Top failed SCA checks",
         'prompt': """Analyze Security Event Analyzer (SEA) logs to identify and report on the most critical failed security checks. Include:
         1. Specific failed security check details
         2. Number of failed check occurrences
