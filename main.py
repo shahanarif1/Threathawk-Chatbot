@@ -58,12 +58,10 @@ st.write("### Quick Messages")
 quick_messages = [
     {
         'label': "Windows Failed Login Attempts & Account Lockouts",
-        'prompt': """Analyze Windows security logs and generate a comprehensive report of all failed login attempts. Include details such as: total number of failed attempts, unique user accounts targeted, timestamps of attempts, source IP addresses, and any patterns indicating potential brute force attacks. Specifically identify:
-        1. Number of distinct user accounts with failed login attempts
-        2. Frequency of login failures per account
-        3. Time windows with highest concentration of login failures
-        4. Potential source locations or IP ranges of these attempts
-        5. Recommend immediate security mitigation steps"""
+        'prompt': """Retrieve windows failed login attempts and account lockouts in last 72 hours
+        - Indicators to windows failed login attempts and account lockouts:
+            - status: AUDIT_FAILURE
+            - type: Security"""
     },
     {
         'label': "Retrieve top vulnerability threat",
